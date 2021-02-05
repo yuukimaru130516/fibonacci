@@ -9,7 +9,7 @@ function fib(n) {
         return memo.get(n);
     } else {
     // メモにデータがないので計算する
-    let value = fib(n-1) + fib(n-2); // 関数の定義の中で関数自身を呼び出すことを再帰
+    let value = fib(n-1) + fib(n-2); // 関数の定義の中で関数自身を呼び出すことを再帰という
     memo.set(n, value);
     return value;
     }
